@@ -5,9 +5,9 @@
   "author": "",
   "contributors": [],
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/thomaslinson/lithium-support-center",
   "main": "app.js",
-  "bugs": "",
+  "bugs": "https://github.com/thomaslinson/lithium-support-center/issues",
   "private": false,
   "keywords": [
     "Twilio",

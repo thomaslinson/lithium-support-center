@@ -2,10 +2,10 @@
   "name": "Lithium Support Center",
   "description": "",
   "repository": "",
-  "logo": "http://s3.amazonaws.com/agiliztech/wp-content/uploads/2017/01/14095805/image-09.png",
+  "logo": "",
   "keywords": ["node", "express", "twilio"],
-  "image": "heroku/nodejs",
-  "repository": "",
+  "image": "https://www.lithium.com/assets/template/img/logo-pink.png",
+  "repository": "https://github.com/thomaslinson/lithium-support-center",
   "addons": ["heroku-postgresql:hobby-dev"],
   "scripts": {
     "postdeploy": "node setup-database.js"
