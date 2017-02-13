@@ -1,0 +1,44 @@
+{
+  "name": "Lithium Support Center",
+  "description": "",
+  "repository": "",
+  "logo": "http://s3.amazonaws.com/agiliztech/wp-content/uploads/2017/01/14095805/image-09.png",
+  "keywords": ["node", "express", "twilio"],
+  "image": "heroku/nodejs",
+  "repository": "",
+  "addons": ["heroku-postgresql:hobby-dev"],
+  "scripts": {
+    "postdeploy": "node setup-database.js"
+  },
+  "success_url": "/setup",
+  "env": {
+    "TWILIO_ACCOUNT_SID": {
+      "description": "Your Twilio accountSid",
+      "value": "accountSid"
+    },
+    "TWILIO_AUTH_TOKEN": {
+      "description": "Your Twilio authToken",
+      "value": "authToken"
+    },
+    "TWILIO_WORKSPACE_SID": {
+      "description": "A Workspace is a container for your Tasks, Workers, TaskQueues. You can create it here: https://www.twilio.com/console/taskrouter/workspaces",
+      "value": "workspaceSid"
+    },
+    "TWILIO_CHAT_SERVICE_SID": {
+      "description": "A service instance where all the chat data is stored and scoped. You can create it here: https://www.twilio.com/console/chat/services",
+      "value": "chatServiceSid"
+    },
+    "TWILIO_VIDEO_CONFIGURATION_SID": {
+      "description": "A Configuration Profile to configure the behavior of your video application. You can create it here: https://www.twilio.com/console/video/profiles",
+      "value": "videoConfigurationSid"
+    },
+    "TWILIO_API_KEY_SID": {
+      "description": "API Keys are revokable credentials for the Twilio API. You can create it here: https://www.twilio.com/console/dev-tools/api-keys",
+      "value": "apiKeySid"
+    },
+    "TWILIO_API_KEY_SECRET": {
+      "description": "API Keys are revokable credentials for the Twilio API.",
+      "value": "apiKeySecret"
+    }
+  }
+}

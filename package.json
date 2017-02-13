@@ -1,0 +1,40 @@
+{
+  "name": "lithium-support-center",
+  "description": "lithium-support-center",
+  "version": "1.0.0",
+  "author": "",
+  "contributors": [],
+  "license": "MIT",
+  "repository": "",
+  "main": "app.js",
+  "bugs": "",
+  "private": false,
+  "keywords": [
+    "Twilio",
+    "heroku",
+    "call centre"
+  ],
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.15.1",
+    "compression": "^1.6.2",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "pg": "^4.5.6",
+    "twilio": "^2.9.x"
+  },
+  "devDependencies": {
+    "eslint": "^3.5.x"
+  },
+  "engines": {
+    "node": "^6.5.x"
+  },
+  "files": [
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node app.js",
+    "lint": "./node_modules/.bin/eslint . || exit 0"
+  }
+}
